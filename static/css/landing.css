@@ -22,8 +22,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: var(--accent-light);
-    color: var(--accent);
+    background: #eafaf3;
+    color: #2ebd76;
     font-size: 0.85rem;
     font-weight: 500;
     padding: 0.4rem 1.1rem;
@@ -35,7 +35,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: var(--accent);
+    background: #2ebd76;
     flex-shrink: 0;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .hero-v2-title-accent {
-    color: var(--accent);
+    color: #2ebd76;
 }
 
 /* Subtitle */
@@ -84,7 +84,7 @@
 }
 
 .hero-v2-btn:hover {
-    background: var(--accent);
+    background: #2ebd76;
 }
 
 /* Browser mock */
@@ -149,7 +149,7 @@
 }
 
 .mock-stat-value {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: var(--ink);
     line-height: 1.2;
@@ -161,7 +161,7 @@
 }
 
 .mock-stat-sub--danger  { color: #c0392b; }
-.mock-stat-sub--success { color: var(--accent); }
+.mock-stat-sub--success { color: #2ebd76; }
 
 /* Category bars */
 .mock-cats {
@@ -189,7 +189,7 @@
 }
 
 .mock-cat-track {
-    height: 10px;
+    height: 14px;
     background: var(--border-soft);
     border-radius: 999px;
     overflow: hidden;
