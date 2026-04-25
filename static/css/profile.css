@@ -1,0 +1,312 @@
+/* ------------------------------------------------------------------ */
+/* Profile page                                                        */
+/* ------------------------------------------------------------------ */
+
+.profile-page {
+    padding: 3rem 2rem 5rem;
+}
+
+.profile-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* Section 1: User Info Card                                           */
+/* ------------------------------------------------------------------ */
+
+.profile-header-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile-name {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 0;
+}
+
+.profile-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.profile-meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.profile-meta dt {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    min-width: 90px;
+}
+
+.profile-meta dd {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Section 2: Summary Stats Row                                        */
+/* ------------------------------------------------------------------ */
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--ink);
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------ */
+/* Shared section wrapper                                              */
+/* ------------------------------------------------------------------ */
+
+.section-block {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--ink);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+/* ------------------------------------------------------------------ */
+/* Section 3: Transaction History Table                                */
+/* ------------------------------------------------------------------ */
+
+.txn-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.txn-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.txn-table th {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    text-align: left;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+}
+
+.txn-table td {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    vertical-align: middle;
+}
+
+.txn-table tr:last-child td {
+    border-bottom: none;
+}
+
+.txn-table .col-date {
+    color: var(--ink-muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding-right: 1rem;
+}
+
+.txn-table .col-amount {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-left: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Category Badges                                                      */
+/* ------------------------------------------------------------------ */
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge-food {
+    background: var(--accent-light);
+    color: var(--accent);
+}
+
+.badge-bills {
+    background: var(--accent-2-light);
+    color: var(--accent-2);
+}
+
+.badge-shopping {
+    background: var(--border-soft);
+    color: var(--ink-soft);
+}
+
+.badge-health {
+    background: var(--danger-light);
+    color: var(--danger);
+}
+
+.badge-entertainment {
+    background: var(--accent-2-light);
+    color: var(--ink-soft);
+}
+
+.badge-transport {
+    background: var(--accent-light);
+    color: var(--ink-soft);
+}
+
+.badge-other {
+    background: var(--border-soft);
+    color: var(--ink-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Section 4: Category Breakdown                                        */
+/* ------------------------------------------------------------------ */
+
+.cat-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.cat-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 72px;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.cat-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.bar-track {
+    height: 6px;
+    background: var(--border-soft);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}
+
+/* bar colours reuse badge background colours */
+.bar-fill.badge-food          { background: var(--accent); }
+.bar-fill.badge-bills         { background: var(--accent-2); }
+.bar-fill.badge-shopping      { background: var(--ink-faint); }
+.bar-fill.badge-health        { background: var(--danger); }
+.bar-fill.badge-entertainment { background: var(--ink-muted); }
+.bar-fill.badge-transport     { background: var(--accent); opacity: 0.5; }
+.bar-fill.badge-other         { background: var(--border); }
+
+.cat-amount {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                           */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+    .profile-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-row {
+        grid-template-columns: 100px 1fr 60px;
+        gap: 0.5rem;
+    }
+}
